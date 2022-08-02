@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Подключаем сетку bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <!-- Подключаем шрифт Cera Round Pro -->
+    <link
+      href="http://fonts.cdnfonts.com/css/cera-round-pro"
+      rel="stylesheet"
+    />
+    <!-- Подключаем шрифт OpenSans -->
+    <link href="http://fonts.cdnfonts.com/css/open-sans" rel="stylesheet" />
+    <!-- Подключаем шрифт Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <!-- Подключаем шрифт OwlCarousel -->
+    <link
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- Подключаем файл стилей -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="top-menu">
+              <div class="top-logo">
+                <img
+                  src="img/logo.png"
+                  class="img-responsive"
+                  alt="Логотип К-телеком"
+                />
+              </div>
+              <nav>
+                <div class="header-burger">
+                  <span></span>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="top-headline">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-7">
+              <h1>Экономия нервов и денег — интернет К-Телеком</h1>
+              <ul class="top-headline_benefits">
+                <li>5 тарифов для многоквартирных и 4 для частных домов</li>
+                <li>безлимит подключенных устройств</li>
+                <li>комфортная поддержка 24/7</li>
+              </ul>
+              <a href="#" class="top-headline_btn">Подробнее</a>
+            </div>
+            <div class="col-5">
+              <img src="img/main-pic.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tariffs">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12"></div>
+          </div>
+        </div>
+      </section>
+      <section class="rate-slider">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h2>Тарифные планы</h2>
+            </div>
+            <div class="col-12">
+              <div class="owl-carousel-wrap">
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="card-tariff">
+                      <h3>Мой клик</h3>
+                      <p class="download-speed">Скорость интернета</p>
+                      <p class="download-speed-digit">до 40 Мбит/с</p>
+                      <p class="about-tariff">
+                        Отличный вариант для пенсионеров, выполнения
+                        определенных задач и работе с файлами различных
+                        размеров.
+                      </p>
+                      <div class="choose-tariff-blck">
+                        <label class="container-checkbox">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <p>
+                          ТВ + 100 ₽ <br />
+                          (пакет “Базовый”)
+                        </p>
+                      </div>
+                      <p class="price">
+                        <span class="digit-price">399 &#8381; </span> в месяц
+                      </p>
+                      <p class="price-payment-option">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ
+                        при необходимости
+                      </p>
+                      <button class="choose-tariff-btn">Выбрать тариф</button>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="card-tariff">
+                      <h3>Резвый клик</h3>
+                      <p class="download-speed">Скорость интернета</p>
+                      <p class="download-speed-digit">до 40 Мбит/с</p>
+                      <p class="about-tariff">
+                        Отличный вариант для всей семьи. Общайтесь в соцсетях и
+                        смотрите любимые фильмы и сериалы!
+                      </p>
+                      <div class="choose-tariff-blck">
+                        <label class="container-checkbox">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <p>
+                          ТВ + 100 ₽ <br />
+                          (пакет “Базовый”)
+                        </p>
+                      </div>
+                      <p class="price">
+                        <span class="digit-price">449 &#8381; </span> в месяц
+                      </p>
+                      <p class="price-payment-option">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ
+                        при необходимости
+                      </p>
+                      <button class="choose-tariff-btn tariff-selected">
+                        Тариф выбран
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="card-tariff">
+                      <h3>Мой клик</h3>
+                      <p class="download-speed">Скорость интернета</p>
+                      <p class="download-speed-digit">до 40 Мбит/с</p>
+                      <p class="about-tariff">
+                        Отличный вариант для пенсионеров, выполнения
+                        определенных задач и работе с файлами различных
+                        размеров.
+                      </p>
+                      <div class="choose-tariff-blck">
+                        <label class="container-checkbox">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <p>
+                          ТВ + 100 ₽ <br />
+                          (пакет “Базовый”)
+                        </p>
+                      </div>
+                      <p class="price">
+                        <span class="digit-price">399 &#8381; </span> в месяц
+                      </p>
+                      <p class="price-payment-option">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ
+                        при необходимости
+                      </p>
+                      <button class="choose-tariff-btn">Выбрать тариф</button>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="card-tariff">
+                      <h3>Мой клик</h3>
+                      <p class="download-speed">Скорость интернета</p>
+                      <p class="download-speed-digit">до 40 Мбит/с</p>
+                      <p class="about-tariff">
+                        Отличный вариант для пенсионеров, выполнения
+                        определенных задач и работе с файлами различных
+                        размеров.
+                      </p>
+                      <div class="choose-tariff-blck">
+                        <label class="container-checkbox">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <p>
+                          ТВ + 100 ₽ <br />
+                          (пакет “Базовый”)
+                        </p>
+                      </div>
+                      <p class="price">
+                        <span class="digit-price">399 &#8381; </span> в месяц
+                      </p>
+                      <p class="price-payment-option">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ
+                        при необходимости
+                      </p>
+                      <button class="choose-tariff-btn">Выбрать тариф</button>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="card-tariff">
+                      <h3>Мой клик</h3>
+                      <p class="download-speed">Скорость интернета</p>
+                      <p class="download-speed-digit">до 40 Мбит/с</p>
+                      <p class="about-tariff">
+                        Отличный вариант для пенсионеров, выполнения
+                        определенных задач и работе с файлами различных
+                        размеров.
+                      </p>
+                      <div class="choose-tariff-blck">
+                        <label class="container-checkbox">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <p>
+                          ТВ + 100 ₽ <br />
+                          (пакет “Базовый”)
+                        </p>
+                      </div>
+                      <p class="price">
+                        <span class="digit-price">399 &#8381; </span> в месяц
+                      </p>
+                      <p class="price-payment-option">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ
+                        при необходимости
+                      </p>
+                      <button class="choose-tariff-btn">Выбрать тариф</button>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="card-tariff">
+                      <h3>Мой клик</h3>
+                      <p class="download-speed">Скорость интернета</p>
+                      <p class="download-speed-digit">до 40 Мбит/с</p>
+                      <p class="about-tariff">
+                        Отличный вариант для пенсионеров, выполнения
+                        определенных задач и работе с файлами различных
+                        размеров.
+                      </p>
+                      <div class="choose-tariff-blck">
+                        <label class="container-checkbox">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <p>
+                          ТВ + 100 ₽ <br />
+                          (пакет “Базовый”)
+                        </p>
+                      </div>
+                      <p class="price">
+                        <span class="digit-price">399 &#8381; </span> в месяц
+                      </p>
+                      <p class="price-payment-option">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ
+                        при необходимости
+                      </p>
+                      <button class="choose-tariff-btn">Выбрать тариф</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-form-sctn">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="form_wrapper">
+                <h2>Подключиться просто!</h2>
+                <form action="" class="main-form">
+                  <div class="services-type">
+                    <div class="internet"><span>Интернет</span></div>
+                    <div class="itnernet-tv"><span>Интернет+ ТВ</span></div>
+                    <div class="telephony"><span>Телефония</span></div>
+                    <div class="cctv"><span>Видеонаблюдение</span></div>
+                  </div>
+                  <div class="row user-info">
+                    <div class="col-3 mr-2">
+                      <input type="text" class="name" placeholder="Имя" />
+                    </div>
+                    <div class="col-5 mr-2">
+                      <input
+                        type="text"
+                        class="phone"
+                        placeholder="Номер телефона"
+                      />
+                    </div>
+                    <div class="col-auto">
+                      <button class="send">Отправить</button>
+                    </div>
+                  </div>
+                  <div class="row agree-wrap">
+                    <div class="col-auto">
+                      <label class="container-checkbox">
+                        <input type="checkbox" checked="checked" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="col-auto agree-txt">
+                      <label for="agree">
+                        Я соглашаюсь на условия обработки данных
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="ftr-content_wrap">
+              <div class="ftr-text-vs-logo">
+                <div class="ftr-logo">
+                  <img
+                    src="img/logo.png"
+                    class="img-responsive"
+                    alt="Логотип К-телеком"
+                  />
+                </div>
+                <div class="copyright">
+                  <span>&copy; 2018–2022 ООО «К-Телеком»</span>
+                </div>
+              </div>
+              <div class="soc-icons">
+                <a href="#">
+                  <div class="soc-icon_inst">
+                    <i class="fa fa-instagram"></i>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="soc-icon_youtu">
+                    <i class="fa fa-youtube-play"></i>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="soc-icon_vk">
+                    <i class="fa fa-vk"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/main-slider-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,541 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 80px;
+}
+
+header .container-fluid,
+header .container-fluid .row,
+header .container-fluid .row .col-12 {
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+main {
+}
+
+.container-fluid {
+  max-width: 901px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.top-headline {
+  background-color: #f2f6f8;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.top-headline .container,
+.top-headline .container .row {
+}
+
+.top-headline h1 {
+  font-family: "Cera Round Pro", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #2d2d2d;
+  max-width: 400px;
+}
+
+.top-headline_benefits {
+  margin-top: 10px;
+  padding-left: 0;
+  margin-left: 20px;
+  margin-bottom: 42px;
+}
+
+.top-headline_benefits li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 200%;
+  margin-bottom: 5px;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.top-headline_btn {
+  background-color: #c81059;
+  border-radius: 5px;
+  padding: 12px 61.5px;
+  font-family: "Cera Round Pro", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.rate-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.rate-slider h2 {
+  margin-top: 52px;
+  margin-bottom: 33px;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  color: #2d2d2d;
+}
+
+.rate-slider .item {
+  padding-top: 10px;
+}
+
+.owl-carousel {
+  padding-bottom: 20px;
+}
+
+.owl-stage {
+  display: flex;
+}
+
+.owl-carousel-wrap h2 {
+  color: #fff;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.card-tariff {
+  padding: 30px;
+  box-shadow: 0px 10px 22px rgb(0 0 0 / 10%);
+  height: 481px;
+  border-radius: 10px;
+}
+
+.card-tariff h3,
+.download-speed,
+.download-speed-digit,
+.about-tariff,
+.price,
+.digit-price,
+.price-payment-option,
+.choose-tariff,
+.choose-tariff-blck p {
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.rate-slider h2,
+.card-tariff h3,
+.download-speed-digit,
+.choose-tariff {
+  font-family: "Cera Round Pro", sans-serif;
+  font-weight: 500;
+}
+
+.download-speed,
+.about-tariff,
+.price,
+.price-payment-option {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.card-tariff h3 {
+  font-size: 20px;
+  color: #000000;
+}
+
+.download-speed {
+  margin: 12.5px 0 5px 0;
+  font-size: 14px;
+  color: #acacac;
+}
+
+.download-speed-digit {
+  font-size: 25px;
+  color: #c81059;
+}
+
+.about-tariff {
+  margin-top: 4.5px;
+  font-size: 13px;
+  color: #555555;
+}
+
+.choose-tariff-blck {
+  display: flex;
+  margin-top: 24px;
+}
+
+.choose-tariff-blck p {
+  font-family: "Cera Round Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2d2d2d;
+  margin-left: 10px;
+}
+
+.price {
+  padding-top: 20px;
+  font-size: 16px;
+  color: rgba(85, 85, 85, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.digit-price {
+  font-family: "Cera Round Pro", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #2d2d2d;
+  display: block;
+  margin-right: 8px;
+}
+
+.price-payment-option {
+  font-size: 12px;
+  color: rgba(85, 85, 85, 0.5);
+}
+
+.choose-tariff-btn {
+  margin-top: 20px;
+  background: #c81059;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 12px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.tariff-selected {
+  background-color: #0099c8;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.main-form-sctn {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.form_wrapper {
+  background-color: #f2f6f8;
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 340px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form_wrapper h2 {
+  font-family: "Cera Round Pro", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  color: #2d2d2d;
+}
+
+.services-type {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.services-type > div {
+  padding: 7px 40px;
+  border: 1px solid rgba(45, 45, 45, 0.1);
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.services-type div:last-child {
+  margin-right: 0;
+}
+
+.services-type div span {
+  font-family: "Cera Round Pro";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #2d2d2d;
+}
+
+.main-form {
+}
+
+.main-form .user-info input,
+.main-form .user-info button {
+  width: 100%;
+  height: 45px;
+  margin-top: 20px;
+}
+
+.main-form input {
+  padding-left: 25px;
+}
+
+.main-form input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: rgba(45, 45, 45, 0.3);
+}
+.main-form button {
+  padding: 12px 61px;
+  background: #c81059;
+  border-radius: 5px;
+  font-family: "Cera Round Pro";
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  min-width: 202px;
+}
+.main-form button:hover {
+  cursor: pointer;
+}
+
+.agree-wrap {
+  margin-top: 20px;
+}
+.agree-txt {
+  padding-left: 0;
+}
+
+.agree-txt label {
+  font-family: "Cera Round Pro";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #989898;
+}
+
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #fff;
+  border: 2px solid rgba(45, 45, 45, 0.1);
+  border-radius: 2px;
+}
+
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #0099c8;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-checkbox .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.footer {
+}
+
+.ftr-content_wrap {
+  border-top: 1px solid rgba(45, 45, 45, 0.1);
+  border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+  padding: 20px 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ftr-text-vs-logo {
+  display: flex;
+  align-items: center;
+}
+
+.ftr-logo {
+  margin-right: 60px;
+}
+
+.copyright {
+}
+
+.copyright span {
+  font-family: "Cera Round Pro";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #c2c2c2;
+}
+
+.soc-icons {
+  display: flex;
+  align-items: center;
+}
+
+.soc-icons > a {
+  text-decoration: none;
+}
+
+.soc-icons > a div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid 1px rgba(232, 32, 92, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+
+.soc-icons > a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.soc-icons > a:nth-of-type(2) div {
+  box-shadow: 0px 7px 7px #c2c2c2;
+}
+
+.fa-instagram,
+.fa-vk,
+.fa-youtube-play {
+  color: rgba(232, 32, 92, 1);
+}
+
+.fa-instagram,
+.fa-youtube-play {
+  font-size: 1.5rem;
+}
+
+.fa-vk {
+  font-size: 1.625rem;
+}
+
+@media (max-width: 767px) {
+  .header-burger {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+  }
+  .header-burger span {
+    position: absolute;
+    background-color: #2d2d2d;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    top: 9px;
+    transition: all 0.3s ease-out;
+  }
+  .header-burger:before,
+  .header-burger:after {
+    content: "";
+    background-color: #2d2d2d;
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    left: 0;
+    transition: all 0.3s ease-out;
+  }
+  .header-burger:before {
+    top: 0;
+    height: 3.5px;
+  }
+  .header-burger:after {
+    bottom: -1px;
+    height: 3px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+    padding: 0;
+  }
+}
