@@ -11,10 +11,18 @@ $(document).ready(function () {
         items: 1.5,
         margin: 10, //Отступ от элемента справа в 28px
       },
-      1000: {
-        items: 2,
+      768: {
+        items: 2.5,
         margin: 28, //Отступ от элемента справа в 28px
       },
+
     },
-  });
+    onInitialized: slideOpacity,
+    onTranslated: slideOpacity
+  })
+
+  function slideOpacity() {
+    $('.owl-carousel .owl-item.opacity').removeClass('opacity');
+    $('.owl-carousel .owl-item.active').eq(-1).addClass('opacity');
+  }
 });

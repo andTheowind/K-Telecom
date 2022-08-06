@@ -466,6 +466,13 @@ main {
   font-size: 1.625rem;
 }
 
+@media (max-width: 1000px) {
+  /* .owl-item.active ~ .owl-item.active {
+    opacity: 0.3;
+    filter: drop-shadow(0px 12px 25px rgba(90, 90, 90, 0.12));
+  } */
+}
+
 @media (max-width: 767px) {
   .header-burger {
     display: block;
@@ -540,6 +547,10 @@ main {
   .form_wrapper h2,
   .download-speed-digit {
     font-size: 18px;
+  }
+  .owl-item.active ~ .owl-item.active {
+    opacity: 0.3;
+    filter: drop-shadow(0px 12px 25px rgba(90, 90, 90, 0.12));
   }
   .card-tariff {
     min-height: 413px;
@@ -689,8 +700,33 @@ main {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .owl-item.opacity,
+  .owl-item.opacity ~ .owl-item {
+    opacity: 0.3;
+    filter: drop-shadow(0px 12px 25px rgba(90, 90, 90, 0.12));
+  }
+  .card-tariff {
+    min-height: 492px;
+  }
+}
+
 @media (min-width: 992px) {
   .container-fluid {
     padding: 0;
+  }
+}
+
+@media (min-width: 1336px) {
+  .owl-item.opacity ~ .owl-item {
+    opacity: 0.3;
+    filter: drop-shadow(0px 12px 25px rgba(90, 90, 90, 0.12));
+  }
+}
+
+@media (min-width: 1920px) {
+  .owl-item.opacity ~ .owl-item ~ .owl-item {
+    opacity: 0.3;
+    filter: drop-shadow(0px 12px 25px rgba(90, 90, 90, 0.12));
   }
 }
