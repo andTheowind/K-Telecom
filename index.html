@@ -19,7 +19,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
-    <!-- Подключаем шрифт OwlCarousel -->
+    <!-- Подключаем плагин OwlCarousel -->
     <link
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
@@ -53,8 +53,8 @@
     <main>
       <section class="top-headline">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-7">
+          <div class="row top-headline_rows">
+            <div class="col-12 col-md-7 top-headline_txt">
               <h1>Экономия нервов и денег — интернет К-Телеком</h1>
               <ul class="top-headline_benefits">
                 <li>5 тарифов для многоквартирных и 4 для частных домов</li>
@@ -63,7 +63,7 @@
               </ul>
               <a href="#" class="top-headline_btn">Подробнее</a>
             </div>
-            <div class="col-5">
+            <div class="col-12 col-md-5 top-headline_img">
               <img src="img/main-pic.png" class="img-fluid" alt="" />
             </div>
           </div>
@@ -112,11 +112,13 @@
                         *итоговая цена зависит от варианта оплаты и пакета ТВ
                         при необходимости
                       </p>
-                      <button class="choose-tariff-btn">Выбрать тариф</button>
+                      <button class="choose-tariff-btn">
+                        Выбрать <span>тариф</span>
+                      </button>
                     </div>
                   </div>
                   <div class="item">
-                    <div class="card-tariff">
+                    <div class="card-tariff selected-card">
                       <h3>Резвый клик</h3>
                       <p class="download-speed">Скорость интернета</p>
                       <p class="download-speed-digit">до 40 Мбит/с</p>
@@ -142,7 +144,7 @@
                         при необходимости
                       </p>
                       <button class="choose-tariff-btn tariff-selected">
-                        Тариф выбран
+                        <span>Тариф</span> выбран
                       </button>
                     </div>
                   </div>
@@ -173,7 +175,9 @@
                         *итоговая цена зависит от варианта оплаты и пакета ТВ
                         при необходимости
                       </p>
-                      <button class="choose-tariff-btn">Выбрать тариф</button>
+                      <button class="choose-tariff-btn">
+                        Выбрать <span>тариф</span>
+                      </button>
                     </div>
                   </div>
                   <div class="item">
@@ -203,7 +207,9 @@
                         *итоговая цена зависит от варианта оплаты и пакета ТВ
                         при необходимости
                       </p>
-                      <button class="choose-tariff-btn">Выбрать тариф</button>
+                      <button class="choose-tariff-btn">
+                        Выбрать <span>тариф</span>
+                      </button>
                     </div>
                   </div>
                   <div class="item">
@@ -233,7 +239,9 @@
                         *итоговая цена зависит от варианта оплаты и пакета ТВ
                         при необходимости
                       </p>
-                      <button class="choose-tariff-btn">Выбрать тариф</button>
+                      <button class="choose-tariff-btn">
+                        Выбрать <span>тариф</span>
+                      </button>
                     </div>
                   </div>
                   <div class="item">
@@ -263,7 +271,9 @@
                         *итоговая цена зависит от варианта оплаты и пакета ТВ
                         при необходимости
                       </p>
-                      <button class="choose-tariff-btn">Выбрать тариф</button>
+                      <button class="choose-tariff-btn">
+                        Выбрать <span>тариф</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -286,17 +296,17 @@
                     <div class="cctv"><span>Видеонаблюдение</span></div>
                   </div>
                   <div class="row user-info">
-                    <div class="col-3 mr-2">
+                    <div class="col-xs-12 col-md-3 mr-2">
                       <input type="text" class="name" placeholder="Имя" />
                     </div>
-                    <div class="col-5 mr-2">
+                    <div class="col-xs-12 col-md-5 mr-2">
                       <input
                         type="text"
                         class="phone"
                         placeholder="Номер телефона"
                       />
                     </div>
-                    <div class="col-auto">
+                    <div class="col col-sm-auto">
                       <button class="send">Отправить</button>
                     </div>
                   </div>
@@ -313,6 +323,10 @@
                       </label>
                     </div>
                   </div>
+                  <p class="conditions">
+                    Нажимая кнопку “Отправить” вы соглашаетесь на условия
+                    <a href="#">обработки данных</a>
+                  </p>
                 </form>
               </div>
             </div>
@@ -362,5 +376,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/main-slider-script.js"></script>
+    <script>
+      $(".services-type div").click(function (e) {
+        e.preventDefault();
+        $(".services-type div").removeClass("services-type_active");
+        $(this).addClass("services-type_active");
+      });
+    </script>
   </body>
 </html>
