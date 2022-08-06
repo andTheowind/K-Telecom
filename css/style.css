@@ -74,7 +74,6 @@ main {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 200%;
-  margin-bottom: 5px;
   letter-spacing: 0.02em;
   color: #555555;
 }
@@ -178,7 +177,7 @@ main {
   margin-top: 24px;
 }
 .choose-tariff-blck p {
-  font-family: "Cera Round Pro";
+  font-family: "Cera Round Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -417,7 +416,7 @@ main {
 .copyright {
 }
 .copyright span {
-  font-family: "Cera Round Pro";
+  font-family: "Cera Round Pro", sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.02em;
