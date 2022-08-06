@@ -12,7 +12,7 @@ $(document).ready(function () {
         margin: 10, //Отступ от элемента справа в 28px
       },
       1000: {
-        items: 2.5,
+        items: 2,
         margin: 28, //Отступ от элемента справа в 28px
       },
     },
