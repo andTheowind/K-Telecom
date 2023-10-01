@@ -111,6 +111,10 @@ main {
 .owl-stage {
   display: flex;
 }
+.owl-item {
+  display: flex;
+  align-items: stretch;
+}
 .owl-carousel-wrap h2 {
   color: #fff;
   text-align: center;
@@ -119,13 +123,15 @@ main {
   font-style: italic;
   font-weight: 300;
 }
-.owl-item:nth-child(-n + 3) {
+.owl-item:nth-child(-n + 4) {
   visibility: hidden;
 }
 .card-tariff {
   padding: 30px;
+  border: 1px solid #e2e7e9;
+  -webkit-box-shadow: 0px 10px 22px rgb(0 0 0 / 10%);
   box-shadow: 0px 10px 22px rgb(0 0 0 / 10%);
-  min-height: 481px;
+  min-height: 480px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -210,7 +216,6 @@ main {
 }
 .choose-tariff-btn {
   margin-top: 20px;
-  background: #c81059;
   border-radius: 5px;
   font-size: 14px;
   color: #ffffff;
@@ -220,8 +225,11 @@ main {
   font-family: "Cera Round Pro", sans-serif;
   font-weight: 500;
 }
-.tariff-selected {
+.tariff-not-selected {
   background-color: #0099c8;
+}
+.tariff-selected {
+  background-color: #c81059;
 }
 .owl-nav {
   display: none;
@@ -708,6 +716,13 @@ main {
   }
   .card-tariff {
     min-height: 492px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  .owl-item.opacity {
+    opacity: 0.3;
+    filter: drop-shadow(0px 12px 25px rgba(90, 90, 90, 0.12));
   }
 }
 

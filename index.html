@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Подключаем сетку bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" />
+
     <!-- Подключаем шрифт Cera Round Pro -->
-    <link
-      href="https://fonts.cdnfonts.com/css/cera-round-pro"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.cdnfonts.com/css/cera-round-pro" rel="stylesheet" />
+
     <!-- Подключаем шрифт OpenSans -->
     <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet" />
+
     <!-- Подключаем шрифт Font-Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
-    />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+
     <!-- Подключаем плагин OwlCarousel -->
-    <link
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
     <!-- Подключаем файл стилей -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+
+    <title>Подключение интернета</title>
+
   </head>
   <body>
+
     <header class="header">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
             <div class="top-menu">
               <div class="top-logo">
-                <img
-                  src="img/logo.png"
-                  class="img-responsive"
-                  alt="Логотип К-телеком"
-                />
+                <img src="img/logo.png" class="img-responsive" alt="Логотип К-телеком" />
               </div>
               <nav>
                 <div class="header-burger">
@@ -69,13 +66,6 @@
           </div>
         </div>
       </section>
-      <section class="tariffs">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12"></div>
-          </div>
-        </div>
-      </section>
       <section class="rate-slider">
         <div class="container-fluid">
           <div class="row">
@@ -101,7 +91,7 @@
                           <span class="checkmark"></span>
                         </label>
                         <p>
-                          ТВ + 100 ₽ <br />
+                          ТВ + 130 ₽ <br />
                           (пакет “Базовый”)
                         </p>
                       </div>
@@ -112,8 +102,8 @@
                         *итоговая цена зависит от варианта оплаты и пакета ТВ
                         при необходимости
                       </p>
-                      <button class="choose-tariff-btn">
-                        Выбрать <span>тариф</span>
+                      <button class="choose-tariff-btn tariff-not-selected">
+                        Выбрать тариф
                       </button>
                     </div>
                   </div>
@@ -128,11 +118,11 @@
                       </p>
                       <div class="choose-tariff-blck">
                         <label class="container-checkbox">
-                          <input type="checkbox" />
+                          <input type="checkbox" checked="checked" />
                           <span class="checkmark"></span>
                         </label>
                         <p>
-                          ТВ + 100 ₽ <br />
+                          ТВ + 130 ₽ <br />
                           (пакет “Базовый”)
                         </p>
                       </div>
@@ -144,15 +134,77 @@
                         при необходимости
                       </p>
                       <button class="choose-tariff-btn tariff-selected">
-                        <span>Тариф</span> выбран
+                        Тариф выбран
                       </button>
                     </div>
                   </div>
                   <div class="item">
                     <div class="card-tariff">
-                      <h3>Мой клик</h3>
+                      <h3>Продвинутый</h3>
                       <p class="download-speed">Скорость интернета</p>
-                      <p class="download-speed-digit">до 40 Мбит/с</p>
+                      <p class="download-speed-digit">до 150 Мбит/с</p>
+                      <p class="about-tariff">
+                        Идеальный вариант для активных пользователей, 
+                        которые постоянно нуждаются в максимально быстром интернете
+                      </p>
+                      <div class="choose-tariff-blck">
+                        <label class="container-checkbox">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <p>
+                          ТВ + 100 ₽ <br />
+                          (пакет “Базовый”)
+                        </p>
+                      </div>
+                      <p class="price">
+                        <span class="digit-price">750 &#8381; </span> в месяц
+                      </p>
+                      <p class="price-payment-option">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ
+                        при необходимости
+                      </p>
+                      <button class="choose-tariff-btn tariff-not-selected">
+                        Выбрать тариф
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="card-tariff">
+                      <h3>Комфортный</h3>
+                      <p class="download-speed">Скорость интернета</p>
+                      <p class="download-speed-digit">до 100 Мбит/с</p>
+                      <p class="about-tariff">
+                        Идеальный семейный тариф с возможностью подключения нескольких 
+                        устройств и оптимальной скоростью для каждого из них
+                      </p>
+                      <div class="choose-tariff-blck">
+                        <label class="container-checkbox">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <p>
+                          ТВ + 100 ₽ <br />
+                          (пакет “Базовый”)
+                        </p>
+                      </div>
+                      <p class="price">
+                        <span class="digit-price">650 &#8381; </span> в месяц
+                      </p>
+                      <p class="price-payment-option">
+                        *итоговая цена зависит от варианта оплаты и пакета ТВ
+                        при необходимости
+                      </p>
+                      <button class="choose-tariff-btn tariff-not-selected">
+                        Выбрать тариф
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="card-tariff">
+                      <h3>Экономный</h3>
+                      <p class="download-speed">Скорость интернета</p>
+                      <p class="download-speed-digit">до 60 Мбит/с</p>
                       <p class="about-tariff">
                         Отличный вариант для пенсионеров, выполнения
                         определенных задач и работе с файлами различных
@@ -169,26 +221,25 @@
                         </p>
                       </div>
                       <p class="price">
-                        <span class="digit-price">399 &#8381; </span> в месяц
+                        <span class="digit-price">460 &#8381; </span> в месяц
                       </p>
                       <p class="price-payment-option">
                         *итоговая цена зависит от варианта оплаты и пакета ТВ
                         при необходимости
                       </p>
-                      <button class="choose-tariff-btn">
-                        Выбрать <span>тариф</span>
+                      <button class="choose-tariff-btn tariff-not-selected">
+                        Выбрать тариф
                       </button>
                     </div>
                   </div>
                   <div class="item">
                     <div class="card-tariff">
-                      <h3>Мой клик</h3>
+                      <h3>Скоросткой дом</h3>
                       <p class="download-speed">Скорость интернета</p>
-                      <p class="download-speed-digit">до 40 Мбит/с</p>
+                      <p class="download-speed-digit">до 200 Мбит/с</p>
                       <p class="about-tariff">
-                        Отличный вариант для пенсионеров, выполнения
-                        определенных задач и работе с файлами различных
-                        размеров.
+                        Высокая скорость для наслаждения безграничными 
+                        возможностями интернета — идеальный выбор для больших семей
                       </p>
                       <div class="choose-tariff-blck">
                         <label class="container-checkbox">
@@ -201,26 +252,25 @@
                         </p>
                       </div>
                       <p class="price">
-                        <span class="digit-price">399 &#8381; </span> в месяц
+                        <span class="digit-price">460 &#8381; </span> в месяц
                       </p>
                       <p class="price-payment-option">
                         *итоговая цена зависит от варианта оплаты и пакета ТВ
                         при необходимости
                       </p>
-                      <button class="choose-tariff-btn">
-                        Выбрать <span>тариф</span>
+                      <button class="choose-tariff-btn tariff-not-selected">
+                        Выбрать тариф
                       </button>
                     </div>
                   </div>
                   <div class="item">
                     <div class="card-tariff">
-                      <h3>Мой клик</h3>
+                      <h3>Продвинутый дом</h3>
                       <p class="download-speed">Скорость интернета</p>
-                      <p class="download-speed-digit">до 40 Мбит/с</p>
+                      <p class="download-speed-digit">до 200 Мбит/с</p>
                       <p class="about-tariff">
-                        Отличный вариант для пенсионеров, выполнения
-                        определенных задач и работе с файлами различных
-                        размеров.
+                        Предельная скорость для требовательных пользователей — 
+                        быстрый доступ к интернету для решения абсолютно любых задач
                       </p>
                       <div class="choose-tariff-blck">
                         <label class="container-checkbox">
@@ -233,46 +283,14 @@
                         </p>
                       </div>
                       <p class="price">
-                        <span class="digit-price">399 &#8381; </span> в месяц
+                        <span class="digit-price">460 &#8381; </span> в месяц
                       </p>
                       <p class="price-payment-option">
                         *итоговая цена зависит от варианта оплаты и пакета ТВ
                         при необходимости
                       </p>
-                      <button class="choose-tariff-btn">
-                        Выбрать <span>тариф</span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="card-tariff">
-                      <h3>Мой клик</h3>
-                      <p class="download-speed">Скорость интернета</p>
-                      <p class="download-speed-digit">до 40 Мбит/с</p>
-                      <p class="about-tariff">
-                        Отличный вариант для пенсионеров, выполнения
-                        определенных задач и работе с файлами различных
-                        размеров.
-                      </p>
-                      <div class="choose-tariff-blck">
-                        <label class="container-checkbox">
-                          <input type="checkbox" checked="checked" />
-                          <span class="checkmark"></span>
-                        </label>
-                        <p>
-                          ТВ + 100 ₽ <br />
-                          (пакет “Базовый”)
-                        </p>
-                      </div>
-                      <p class="price">
-                        <span class="digit-price">399 &#8381; </span> в месяц
-                      </p>
-                      <p class="price-payment-option">
-                        *итоговая цена зависит от варианта оплаты и пакета ТВ
-                        при необходимости
-                      </p>
-                      <button class="choose-tariff-btn">
-                        Выбрать <span>тариф</span>
+                      <button class="choose-tariff-btn tariff-not-selected">
+                        Выбрать тариф
                       </button>
                     </div>
                   </div>
@@ -297,17 +315,13 @@
                   </div>
                   <div class="row user-info">
                     <div class="col-xs-12 col-md-3 mr-2">
-                      <input type="text" class="name" placeholder="Имя" />
+                      <input type="text" class="name" placeholder="Имя" required />
                     </div>
                     <div class="col-xs-12 col-md-5 mr-2">
-                      <input
-                        type="text"
-                        class="phone"
-                        placeholder="Номер телефона"
-                      />
+                      <input type="text" class="phone" placeholder="Номер телефона" required />
                     </div>
                     <div class="col col-sm-auto">
-                      <button class="send">Отправить</button>
+                      <button class="send" id="send-btn">Отправить</button>
                     </div>
                   </div>
                   <div class="row agree-wrap">
@@ -341,11 +355,7 @@
             <div class="ftr-content_wrap">
               <div class="ftr-text-vs-logo">
                 <div class="ftr-logo">
-                  <img
-                    src="img/logo.png"
-                    class="img-responsive"
-                    alt="Логотип К-телеком"
-                  />
+                  <img src="img/logo.png" class="img-responsive" alt="Логотип К-телеком" />
                 </div>
                 <div class="copyright">
                   <span>&copy; 2018–2022 ООО «К-Телеком»</span>
@@ -373,15 +383,16 @@
         </div>
       </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    
     <script src="js/main-slider-script.js"></script>
-    <script>
-      $(".services-type div").click(function (e) {
-        e.preventDefault();
-        $(".services-type div").removeClass("services-type_active");
-        $(this).addClass("services-type_active");
-      });
-    </script>
+    <script src="js/choose-type-conntect.js"></script>
+    <script src="js/tariff-select.js"></script>
+    <script src="js/modal.js"></script>
+
   </body>
 </html>

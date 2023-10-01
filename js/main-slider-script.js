@@ -9,12 +9,16 @@ $(document).ready(function () {
       //Адаптивность. Кол-во выводимых элементов при определенной ширине.
       0: {
         items: 1.5,
-        margin: 10, //Отступ от элемента справа в 28px
+        margin: 10, //Отступ от элемента справа в 10px
       },
-      768: {
+      992: {
         items: 2.5,
         margin: 28, //Отступ от элемента справа в 28px
       },
+      2560: {
+        items: 3.5,
+        margin: 35, //Отступ от элемента справа в 35px
+      }
 
     },
     onInitialized: slideOpacity,
@@ -23,6 +27,6 @@ $(document).ready(function () {
 
   function slideOpacity() {
     $('.owl-carousel .owl-item.opacity').removeClass('opacity');
-    $('.owl-carousel .owl-item.active').eq(-1).addClass('opacity');
+    $('.owl-carousel .owl-item.active').eq(-1).addClass('opacity'); 
   }
 });
